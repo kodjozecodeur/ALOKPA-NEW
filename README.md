@@ -4,3 +4,4 @@
 - https://nextjs.org/ for the stack
 - https://themewagon.com/ for templates
 - https://pattemdigital.com/insight/mern-stack-development-process/ for an example of the project
+- https://vercel.com/ for hosting
