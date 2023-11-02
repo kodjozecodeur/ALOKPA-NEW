@@ -1,7 +1,8 @@
-# ALOKPA-NEW
-## Usefuls links to resources
-- https://tailwindui.com/?ref=top for the frontend
-- https://nextjs.org/ for the stack
-- https://themewagon.com/ for templates
-- https://pattemdigital.com/insight/mern-stack-development-process/ for an example of the project
-- https://vercel.com/ for hosting
+# React + Vite
+
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+
+Currently, two official plugins are available:
+
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
