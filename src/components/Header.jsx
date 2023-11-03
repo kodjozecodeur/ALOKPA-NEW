@@ -2,7 +2,7 @@ import React from "react";
 
 function Header(props){
     return(
-        <div className= "first-head">
+        <div class= "contenaire d-flex justify-content-between mt-4" >
             <p>{props.contact}</p>
             <p>{props.shipping}</p>
             <div>

@@ -2,7 +2,9 @@ import React from "react";
 
 function Navbar(props){
     return(
-    <nav class="navbar navbar-expand-lg navbar-light  d-flex justify-content-between border-top">
+  <div>
+    <hr />
+    <nav class="contenaire navbar navbar-expand-lg navbar-light mb-4 mt-4 mt-3 d-flex justify-content-between  align-items-center">
       <div>
       <a class="navbar-brand" href="#">{props.brand}</a></div>
       <div>
@@ -34,6 +36,8 @@ function Navbar(props){
         </div>
       </div>
     </nav>
+    </div>
+
   )
 }
 

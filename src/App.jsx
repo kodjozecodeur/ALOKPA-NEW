@@ -5,6 +5,10 @@ import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 import SearchIcon from '@mui/icons-material/Search';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import Navbar from './components/Navbar';
+import Hero from './components/Hero';
+import Banner1 from "./assets/Banner1.jpg"
+import Banner2 from "./assets/Banner2.jpg"
+
 
 function App() {
   return(
@@ -18,8 +22,24 @@ function App() {
         icon4 = {<SearchIcon />}
       />
       <Navbar 
-        brand = "GO."
+        brand = "ALOKPA"
       />
+      <Hero
+        banner1 = {Banner1}
+        alt1= "banner-1"
+        heroTxt1 ={<h1 >Summer <br/> Collections</h1>}
+        heroP1 ="Lorem ipsum is placeholder text commonly used in the graphic, print"
+        heroShop1="Shop it now"
+
+        banner2 = {Banner2}
+        alt2= "banner-2"
+        heroTxt2 ={<h1 >Casual <br/> Collections</h1>}
+        heroP2 ="Lorem ipsum is placeholder text commonly used in the graphic, print"
+        heroShop2="Shop it now"
+
+
+
+       />
     </div>
     
   )
