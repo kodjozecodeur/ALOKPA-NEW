@@ -1,5 +1,4 @@
 import React from "react";
-import Banner2 from "../assets/Banner2.jpg"
 
 
 function Hero(props){

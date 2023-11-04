@@ -8,7 +8,9 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Banner1 from "./assets/Banner1.jpg"
 import Banner2 from "./assets/Banner2.jpg"
-
+import Featured from './components/Featured';
+import featured from './Featured';
+import SessionName from './components/SessionName';
 
 function App() {
   return(
@@ -29,17 +31,23 @@ function App() {
         alt1= "banner-1"
         heroTxt1 ={<h1 >Summer <br/> Collections</h1>}
         heroP1 ="Lorem ipsum is placeholder text commonly used in the graphic, print"
-        heroShop1="Shop it now"
+        heroShop1="Shop it now "
 
         banner2 = {Banner2}
         alt2= "banner-2"
         heroTxt2 ={<h1 >Casual <br/> Collections</h1>}
         heroP2 ="Lorem ipsum is placeholder text commonly used in the graphic, print"
         heroShop2="Shop it now"
-
-
-
        />
+       <SessionName />
+       {featured.map((theFeatured, index)=>{
+        return (<Featured 
+          key ={index}
+          img = {theFeatured.imgURL}
+          title ={theFeatured.title}
+          price={theFeatured.price}
+        />)
+       })}
     </div>
     
   )

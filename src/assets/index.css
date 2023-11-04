@@ -1,9 +1,21 @@
 .hero-text{
     top: 40%;
-    margin-left: 5%;
+    margin-left: 3.2%;
 }
 .contenaire{
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 3.2%;
+    margin-right: 3.2%;
     align-items: center;
+}
+.featured{
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    margin-top: 3.2%;
+    margin-bottom: 3.2%;
+    box-shadow: 0 2px 5px #ccc;
+    float: left;
+}
+.featured img{
+    width: 237px;
 }
