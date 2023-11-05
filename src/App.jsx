@@ -11,6 +11,7 @@ import Banner2 from "./assets/Banner2.jpg"
 import Featured from './components/Featured';
 import featured from './Featured';
 import SessionName from './components/SessionName';
+import Collections from './components/Collections';
 
 function App() {
   return(
@@ -40,6 +41,7 @@ function App() {
         heroShop2="Shop it now"
        />
        <SessionName />
+
        {featured.map((theFeatured, index)=>{
         return (<Featured 
           key ={index}
@@ -47,7 +49,10 @@ function App() {
           title ={theFeatured.title}
           price={theFeatured.price}
         />)
-       })}
+       })}      
+       <Collections />
+
+
     </div>
     
   )
