@@ -13,6 +13,7 @@ import SessionName from './components/SessionName';
 import Collections from './components/Collections';
 import Suscribe from './components/Suscribe';
 import Bests from './components/Bests';
+import Testimonies from './components/testimonies';
 
 function App() {
   
@@ -48,6 +49,7 @@ function App() {
       <Collections />
       <Suscribe />
       <Bests />
+      <Testimonies />
     </div>
     
   )

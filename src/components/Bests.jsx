@@ -6,9 +6,10 @@ import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 
 function Bests() {
   return (
-    <div className="contenaire my-5 ">
-      <div className="row"> 
-      <h2 class="text-capitalize">best selling products</h2>
+    <div class="bg-light container-fluid best">
+    <div className="contenaire my-5 bg-light ">
+      <div className="row "> 
+      <h2 class="text-capitalize mt-5">best selling products</h2>
       <div id='selling-product'>
       <ul class="tabs list-unstyled " >
           <a><li class="active tab">All</li></a>
@@ -22,7 +23,7 @@ function Bests() {
         </ul>
       </div>
         {Selling.map((item,index) => (
-          <div key={index} className="col col-lg-3 col-md-6 col-sm-12 ">
+          <div key={index} className="col col-lg-3 col-md-6 col-sm-12 mb-5">
             <div className="card m-2 position-relative ">
               <div className="card-body best-card">
                 <img  className ="card-img" src={item.imgURL}></img>
@@ -40,6 +41,7 @@ function Bests() {
           </div>
         ))}
       </div>
+    </div>
     </div>
   );
 }
