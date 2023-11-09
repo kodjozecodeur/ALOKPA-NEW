@@ -12,6 +12,7 @@ import Featured from './components/Featured';
 import SessionName from './components/SessionName';
 import Collections from './components/Collections';
 import Suscribe from './components/Suscribe';
+import Bests from './components/Bests';
 
 function App() {
   
@@ -46,6 +47,7 @@ function App() {
        <Featured />
       <Collections />
       <Suscribe />
+      <Bests />
     </div>
     
   )

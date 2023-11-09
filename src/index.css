@@ -44,3 +44,29 @@ body{
     margin-left: 10%;
     align-items: center;
 }
+#selling-product{
+ box-sizing: border-box;
+}
+#selling-product .tabs{
+    display: flex;
+}
+.tab{
+    padding-right: 30px;
+}
+a button{
+    cursor: pointer;
+}
+.hidden{
+    display: none;
+}
+.card:hover .hidden{
+    display: block;
+}
+
+/* media queries */
+@media screen and (max-width: 600px) {
+#selling-product .tabs{
+    overflow-x: scroll;
+    flex-wrap: unset;
+}
+}
