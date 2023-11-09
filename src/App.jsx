@@ -9,11 +9,13 @@ import Hero from './components/Hero';
 import Banner1 from "./assets/Banner1.jpg"
 import Banner2 from "./assets/Banner2.jpg"
 import Featured from './components/Featured';
-import featured from './Featured';
 import SessionName from './components/SessionName';
 import Collections from './components/Collections';
+import Suscribe from './components/Suscribe';
 
 function App() {
+  
+  
   return(
     <div>
       <Header 
@@ -25,7 +27,7 @@ function App() {
         icon4 = {<SearchIcon />}
       />
       <Navbar 
-        brand = "ALOKPA"
+        brand = "ALOKPA"    
       />
       <Hero
         banner1 = {Banner1}
@@ -41,18 +43,9 @@ function App() {
         heroShop2="Shop it now"
        />
        <SessionName />
-
-       {featured.map((theFeatured, index)=>{
-        return (<Featured 
-          key ={index}
-          img = {theFeatured.imgURL}
-          title ={theFeatured.title}
-          price={theFeatured.price}
-        />)
-       })}      
-       <Collections />
-
-
+       <Featured />
+      <Collections />
+      <Suscribe />
     </div>
     
   )

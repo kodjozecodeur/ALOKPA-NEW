@@ -4,7 +4,7 @@ function Navbar(props){
     return(
   <div>
     <hr />
-    <nav class="contenaire navbar navbar-expand-lg navbar-light mb-4 mt-4 mt-3 d-flex justify-content-between  align-items-center">
+    <nav class="contenaire navbar navbar-expand-lg  mb-4  d-flex justify-content-between ">
       <div>
       <a class="navbar-brand" href="#">{props.brand}</a></div>
       <div>
@@ -12,7 +12,7 @@ function Navbar(props){
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
+          <ul class="navbar-nav text-red-900">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
