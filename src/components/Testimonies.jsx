@@ -6,7 +6,7 @@ import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 function Testimonies(props){
     return(
         <div class=" contenaire d-flex justify-content-between ">
-            <div class="w-25 d-flex "><FormatQuoteIcon sx={{ fontSize: 100 }} /></div>
+            <div class="w-25 d-flex "><FormatQuoteIcon sx={{ fontSize: 100, color: "gray" }}  /></div>
             <div id="carouselExampleControlsNoTouching" class="carousel my-5 me-5 slide position-relative" data-bs-touch="false" data-bs-interval="false">
                 <div class="carousel-inner">
                     <div class="carousel-item active">

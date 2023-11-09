@@ -14,6 +14,7 @@ import Collections from './components/Collections';
 import Suscribe from './components/Suscribe';
 import Bests from './components/Bests';
 import Testimonies from './components/testimonies';
+import Flash from './components/Flash';
 
 function App() {
   
@@ -50,6 +51,7 @@ function App() {
       <Suscribe />
       <Bests />
       <Testimonies />
+      <Flash />
     </div>
     
   )

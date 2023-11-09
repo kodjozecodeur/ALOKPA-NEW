@@ -71,6 +71,10 @@ a button{
 .bg-light{
     margin-top: 5%;
 }
+.flash{
+        overflow-clip-margin: content-box;
+        overflow: clip;
+}
 
 /* media queries */
 @media screen and (max-width: 600px) {
