@@ -1,41 +1,44 @@
-import React from "react";
+import React, { useRef, useState } from 'react';
 import flash from "../flash";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
-// import Swiper core and required modules
-import {Pagination, Scrollbar, A11y } from 'swiper/modules';
-
 
 // Import Swiper styles
 import 'swiper/css';
+import 'swiper/css/free-mode';
 import 'swiper/css/pagination';
+
+
+// import required modules
+import { FreeMode, Pagination } from 'swiper/modules';
 
 function Flash(){
   return (
     <Swiper
-      spaceBetween={30}
-      slidesPerView={4}
-      modules={[Pagination, Scrollbar, A11y]}
-      pagination={{ clickable: true }}
-      onSlideChange={() => console.log('slide change')}
-      onSwiper={(swiper) => console.log(swiper)}
+        slidesPerView={4}
+        spaceBetween={10}
+        freeMode={true}
+        pagination={{
+          clickable: true,
+        }}
+        modules={[FreeMode, Pagination]}
+        className="mySwiper"
     >
 
+
+
         {flash.map((item,index)=>{
-            return(<div class="my-5 ">
-                <SwiperSlide className="contenaire ">
+            return(
+                <SwiperSlide >
                     <div key={index} >
-                        <div className="card m-2 d-inline-block">
-                        <div className="card-body">
+                        <div className="card m-2 ">
                             <img  className ="card-img" src={item.imgURL}></img>
                             <h5 className="card-title text-center">{item.title}</h5>
                             <p className="card-text text-center">{item.price}</p>
                         </div>
-                        </div>
                     </div>
+                    <div class="swiper-pagination"></div>
                 </SwiperSlide>
-
-            </div>
             )
 
         })}

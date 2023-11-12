@@ -8,7 +8,7 @@ import product5 from "./assets/images/selling-products8.jpg"
 const flash = [
     {
       imgURL: product1 ,
-      title: "Full cover shirt",
+      title: "Full cover",
       price: "$230"
     },
     {

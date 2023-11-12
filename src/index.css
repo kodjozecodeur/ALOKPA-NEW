@@ -75,11 +75,48 @@ a button{
         overflow-clip-margin: content-box;
         overflow: clip;
 }
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+  
+.swiper-slide {
+    text-align: center;  
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .swiper-slide .card {
+    display: block;
+    width: 75%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .swiper-slide img {
+    border-radius: 5px 5px 0 0;
+  }
 
+  .swiper-slide:first-child{
+        margin-left: 3.5%;
+  }
+
+  
 /* media queries */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
 #selling-product .tabs{
     overflow-x: scroll;
     flex-wrap: unset;
 }
+
+.swiper-slide img{
+    object-fit: cover;
+    height: 150px;
+  }
+  .swiper-slide .card {
+    height: 220px;
+    width: 100%;
+  }
+
 }

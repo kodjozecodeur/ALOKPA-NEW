@@ -23,7 +23,7 @@ function Bests() {
         </ul>
       </div>
         {Selling.map((item,index) => (
-          <div key={index} className="col col-lg-3 col-md-6 col-sm-12 mb-5">
+          <div key={index} className="col-lg-3 col-md-6 col-sm-12 col-xs-12 mb-5">
             <div className="card m-2 position-relative ">
               <div className="card-body best-card">
                 <img  className ="card-img" src={item.imgURL}></img>
