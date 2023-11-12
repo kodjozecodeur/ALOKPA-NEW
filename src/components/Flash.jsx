@@ -16,7 +16,7 @@ function Flash(){
   return (
     <Swiper
         slidesPerView={4}
-        spaceBetween={10}
+        spaceBetween={15}
         freeMode={true}
         pagination={{
           clickable: true,
@@ -30,12 +30,15 @@ function Flash(){
         {flash.map((item,index)=>{
             return(
                 <SwiperSlide >
-                    <div key={index} >
-                        <div className="card m-2 ">
+                    <div key={index} className="position-relative " >
+                        <div className="card m-2 position-relative ">
                             <img  className ="card-img" src={item.imgURL}></img>
                             <h5 className="card-title text-center">{item.title}</h5>
                             <p className="card-text text-center">{item.price}</p>
                         </div>
+                        <div>
+                              <p class="off position-absolute">10% off</p>
+                            </div>
                     </div>
                     <div class="swiper-pagination"></div>
                 </SwiperSlide>

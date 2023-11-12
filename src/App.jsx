@@ -15,6 +15,8 @@ import Suscribe from './components/Suscribe';
 import Bests from './components/Bests';
 import Testimonies from './components/testimonies';
 import Flash from './components/Flash';
+import Selection from './components/Selection';
+import DailyQuote from './components/DailyQuote';
 
 function App() {
   
@@ -52,6 +54,8 @@ function App() {
       <Bests />
       <Testimonies />
       <Flash />
+      <Selection />
+      <DailyQuote />
     </div>
     
   )
