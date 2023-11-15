@@ -17,6 +17,12 @@ import Testimonies from './components/testimonies';
 import Flash from './components/Flash';
 import Selection from './components/Selection';
 import DailyQuote from './components/DailyQuote';
+import Journal from './components/Journal';
+import Brand from './components/Brand';
+import Instagram from './components/Instagram';
+import Discount from './components/Discount';
+import Footer from './components/Footer';
+
 
 function App() {
   
@@ -56,6 +62,11 @@ function App() {
       <Flash />
       <Selection />
       <DailyQuote />
+      <Journal />
+      <Brand />
+      <Instagram />
+      <Discount />
+      <Footer />
     </div>
     
   )

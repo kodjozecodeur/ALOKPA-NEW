@@ -131,7 +131,17 @@ a button{
     align-items: center;
     justify-content: center;
   }
-
+  .branding{
+    height: 30vh;
+   text-align: center;
+   display: flex;
+   justify-content: center;
+   margin-bottom: 5%;
+  }
+  a{
+  text-decoration: none !important;
+  color: gray;
+  }
   
 /* media queries */
 @media screen and (max-width: 700px) {
